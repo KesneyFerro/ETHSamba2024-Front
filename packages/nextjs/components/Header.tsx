@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useCallback, useRef, useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Bars3Icon } from "@heroicons/react/24/outline";
@@ -64,7 +64,7 @@ export const Header = () => {
   );
 
   return (
-    <div className="sticky lg:static top-0 navbar bg-base-100 min-h-0 flex-shrink-0 justify-between z-20 shadow-md shadow-secondary px-0 sm:px-2">
+    <div className="sticky lg:static top-0 navbar bg-[#6a6d86] min-h-0 flex-shrink-0 justify-between z-20 shadow-md shadow-md px-0 sm:px-2">
       <div className="navbar-start w-auto lg:w-1/2">
         <div className="lg:hidden dropdown" ref={burgerMenuRef}>
           <label
@@ -89,16 +89,11 @@ export const Header = () => {
           )}
         </div>
         <Link href="/" passHref className="hidden lg:flex items-center gap-2 ml-4 mr-6 shrink-0">
-          <div className="flex relative w-10 h-10 ">
-            <Image
-              alt="SE2 logo"
-              className="cursor-pointer rounded-md"
-              fill
-              src="https://pbs.twimg.com/profile_images/1634189010816888833/UsUea9NM_400x400.jpg"
-            />
-          </div>
+          {/* <div className="flex relative w-[75px] h-10 ">
+            <Image alt="SE2 logo" className="cursor-pointer rounded-md" fill src="/logo.png" />
+          </div> */}
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">SUS Blockchain</span>
+            <span className="font-bold leading-tight">OrgãoView</span>
             <span className="text-xs">ETHSamba 2024</span>
           </div>
         </Link>

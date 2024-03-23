@@ -10,7 +10,7 @@ export default function AccountDetail({ children }: { children: React.ReactNode 
   const { data } = useScaffoldContractRead({
     contractName: "MedicalContract",
     functionName: "getPatientByAddress",
-    args: ["0x1bfcC78739b895055d5E61818552a74781C26e0c"],
+    args: [connectedAddress],
   } as any);
 
   if (!connectedAddress) {
@@ -24,7 +24,7 @@ export default function AccountDetail({ children }: { children: React.ReactNode 
       </div>
     );
   }
-  console.log(data);
+  //   console.log(data);
   if (!data) {
     return (
       <div className="flex bg-[#4b4e6d] flex-col w-full flex-grow h-full justify-center items-center">
@@ -53,7 +53,7 @@ export default function AccountDetail({ children }: { children: React.ReactNode 
           </div>
         </div>
       </div>
-      <div className="text-black flex flex-col max-w-[1200px] mx-auto">
+      <div className="text-black flex flex-col w-full max-w-[1200px] mx-auto">
         <div className="flex justify-center flex-col items-center space-x-2 mt-[60px]">{children}</div>
       </div>
     </div>
