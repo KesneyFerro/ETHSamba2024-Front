@@ -7,7 +7,1088 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   31337: {
     MedicalContract: {
-      address: "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0",
+      address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      abi: [
+        {
+          inputs: [
+            {
+              internalType: "string",
+              name: "_contractTitle",
+              type: "string",
+            },
+          ],
+          stateMutability: "nonpayable",
+          type: "constructor",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "_doctorAddress",
+              type: "address",
+            },
+            {
+              internalType: "string",
+              name: "_crm",
+              type: "string",
+            },
+          ],
+          name: "addDoctor",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "string",
+              name: "_name",
+              type: "string",
+            },
+            {
+              internalType: "string",
+              name: "_cpf",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "_age",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "_priority",
+              type: "uint256",
+            },
+            {
+              internalType: "string",
+              name: "_necessity",
+              type: "string",
+            },
+          ],
+          name: "addPatient",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+          ],
+          name: "allPatients",
+          outputs: [
+            {
+              internalType: "string",
+              name: "name",
+              type: "string",
+            },
+            {
+              internalType: "string",
+              name: "cpf",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "age",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "priority",
+              type: "uint256",
+            },
+            {
+              internalType: "string",
+              name: "necessity",
+              type: "string",
+            },
+            {
+              internalType: "address",
+              name: "doctorAddress",
+              type: "address",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "contractTitle",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "",
+              type: "address",
+            },
+          ],
+          name: "doctors",
+          outputs: [
+            {
+              internalType: "address",
+              name: "doctorAddress",
+              type: "address",
+            },
+            {
+              internalType: "string",
+              name: "crm",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "getAllPatients",
+          outputs: [
+            {
+              components: [
+                {
+                  internalType: "string",
+                  name: "name",
+                  type: "string",
+                },
+                {
+                  internalType: "string",
+                  name: "cpf",
+                  type: "string",
+                },
+                {
+                  internalType: "uint256",
+                  name: "age",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "priority",
+                  type: "uint256",
+                },
+                {
+                  internalType: "string",
+                  name: "necessity",
+                  type: "string",
+                },
+                {
+                  internalType: "address",
+                  name: "doctorAddress",
+                  type: "address",
+                },
+              ],
+              internalType: "struct MedicalContract.Patient[]",
+              name: "",
+              type: "tuple[]",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "_doctorAddress",
+              type: "address",
+            },
+          ],
+          name: "getAllPatientsByDoctor",
+          outputs: [
+            {
+              components: [
+                {
+                  internalType: "string",
+                  name: "name",
+                  type: "string",
+                },
+                {
+                  internalType: "string",
+                  name: "cpf",
+                  type: "string",
+                },
+                {
+                  internalType: "uint256",
+                  name: "age",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "priority",
+                  type: "uint256",
+                },
+                {
+                  internalType: "string",
+                  name: "necessity",
+                  type: "string",
+                },
+                {
+                  internalType: "address",
+                  name: "doctorAddress",
+                  type: "address",
+                },
+              ],
+              internalType: "struct MedicalContract.Patient[]",
+              name: "",
+              type: "tuple[]",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "_doctorAddress",
+              type: "address",
+            },
+          ],
+          name: "getDoctorCRM",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "getTitle",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "owner",
+          outputs: [
+            {
+              internalType: "address",
+              name: "",
+              type: "address",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "",
+              type: "address",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+          ],
+          name: "patientsByDoctor",
+          outputs: [
+            {
+              internalType: "string",
+              name: "name",
+              type: "string",
+            },
+            {
+              internalType: "string",
+              name: "cpf",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "age",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "priority",
+              type: "uint256",
+            },
+            {
+              internalType: "string",
+              name: "necessity",
+              type: "string",
+            },
+            {
+              internalType: "address",
+              name: "doctorAddress",
+              type: "address",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+      ],
+      inheritedFunctions: {},
+    },
+  },
+  534351: {
+    MedicalContract: {
+      address: "0x63333cd5d9E255D975EC27aCcC725F6dAA99cd60",
+      abi: [
+        {
+          inputs: [
+            {
+              internalType: "string",
+              name: "_contractTitle",
+              type: "string",
+            },
+          ],
+          stateMutability: "nonpayable",
+          type: "constructor",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "_doctorAddress",
+              type: "address",
+            },
+            {
+              internalType: "string",
+              name: "_crm",
+              type: "string",
+            },
+          ],
+          name: "addDoctor",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "string",
+              name: "_name",
+              type: "string",
+            },
+            {
+              internalType: "string",
+              name: "_cpf",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "_birthDate",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "_priority",
+              type: "uint256",
+            },
+            {
+              internalType: "string",
+              name: "_bloodType",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "_recipientAge",
+              type: "uint256",
+            },
+            {
+              internalType: "address",
+              name: "_patientWalletAddress",
+              type: "address",
+            },
+            {
+              internalType: "uint256",
+              name: "_organSize",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "_urgency",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "_curability",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "_qConstant",
+              type: "uint256",
+            },
+          ],
+          name: "addPatient",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+          ],
+          name: "allPatients",
+          outputs: [
+            {
+              internalType: "string",
+              name: "name",
+              type: "string",
+            },
+            {
+              internalType: "string",
+              name: "cpf",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "birthDate",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "priority",
+              type: "uint256",
+            },
+            {
+              internalType: "address",
+              name: "doctorAddress",
+              type: "address",
+            },
+            {
+              internalType: "address",
+              name: "patientWalletAddress",
+              type: "address",
+            },
+            {
+              internalType: "string",
+              name: "bloodType",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "recipientAge",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "organSize",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "urgency",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "curability",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "qConstant",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "queueEntryDate",
+              type: "uint256",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "contractTitle",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "",
+              type: "address",
+            },
+          ],
+          name: "doctors",
+          outputs: [
+            {
+              internalType: "string",
+              name: "crm",
+              type: "string",
+            },
+            {
+              internalType: "address",
+              name: "doctorAddress",
+              type: "address",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "_patientAddress",
+              type: "address",
+            },
+            {
+              internalType: "uint256",
+              name: "_newPriority",
+              type: "uint256",
+            },
+          ],
+          name: "elevatePriority",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "getAllPatients",
+          outputs: [
+            {
+              components: [
+                {
+                  internalType: "string",
+                  name: "name",
+                  type: "string",
+                },
+                {
+                  internalType: "string",
+                  name: "cpf",
+                  type: "string",
+                },
+                {
+                  internalType: "uint256",
+                  name: "birthDate",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "priority",
+                  type: "uint256",
+                },
+                {
+                  internalType: "address",
+                  name: "doctorAddress",
+                  type: "address",
+                },
+                {
+                  internalType: "address",
+                  name: "patientWalletAddress",
+                  type: "address",
+                },
+                {
+                  internalType: "string",
+                  name: "bloodType",
+                  type: "string",
+                },
+                {
+                  internalType: "uint256",
+                  name: "recipientAge",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "organSize",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "urgency",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "curability",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "qConstant",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "queueEntryDate",
+                  type: "uint256",
+                },
+              ],
+              internalType: "struct MedicalContract.Patient[]",
+              name: "",
+              type: "tuple[]",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "_doctorAddress",
+              type: "address",
+            },
+          ],
+          name: "getAllPatientsByDoctor",
+          outputs: [
+            {
+              components: [
+                {
+                  internalType: "string",
+                  name: "name",
+                  type: "string",
+                },
+                {
+                  internalType: "string",
+                  name: "cpf",
+                  type: "string",
+                },
+                {
+                  internalType: "uint256",
+                  name: "birthDate",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "priority",
+                  type: "uint256",
+                },
+                {
+                  internalType: "address",
+                  name: "doctorAddress",
+                  type: "address",
+                },
+                {
+                  internalType: "address",
+                  name: "patientWalletAddress",
+                  type: "address",
+                },
+                {
+                  internalType: "string",
+                  name: "bloodType",
+                  type: "string",
+                },
+                {
+                  internalType: "uint256",
+                  name: "recipientAge",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "organSize",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "urgency",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "curability",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "qConstant",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "queueEntryDate",
+                  type: "uint256",
+                },
+              ],
+              internalType: "struct MedicalContract.Patient[]",
+              name: "",
+              type: "tuple[]",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "_doctorAddress",
+              type: "address",
+            },
+          ],
+          name: "getDoctorCRM",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "_patientAddress",
+              type: "address",
+            },
+          ],
+          name: "getPatientByAddress",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+            {
+              internalType: "address",
+              name: "",
+              type: "address",
+            },
+            {
+              internalType: "address",
+              name: "",
+              type: "address",
+            },
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+            {
+              components: [
+                {
+                  internalType: "address",
+                  name: "patientAddress",
+                  type: "address",
+                },
+                {
+                  internalType: "uint256",
+                  name: "oldValue",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "newValue",
+                  type: "uint256",
+                },
+                {
+                  internalType: "string",
+                  name: "field",
+                  type: "string",
+                },
+                {
+                  internalType: "address",
+                  name: "doctorAddress",
+                  type: "address",
+                },
+                {
+                  internalType: "uint256",
+                  name: "date",
+                  type: "uint256",
+                },
+              ],
+              internalType: "struct MedicalContract.Record[]",
+              name: "",
+              type: "tuple[]",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "_patientAddress",
+              type: "address",
+            },
+          ],
+          name: "getPatientRecords",
+          outputs: [
+            {
+              components: [
+                {
+                  internalType: "address",
+                  name: "patientAddress",
+                  type: "address",
+                },
+                {
+                  internalType: "uint256",
+                  name: "oldValue",
+                  type: "uint256",
+                },
+                {
+                  internalType: "uint256",
+                  name: "newValue",
+                  type: "uint256",
+                },
+                {
+                  internalType: "string",
+                  name: "field",
+                  type: "string",
+                },
+                {
+                  internalType: "address",
+                  name: "doctorAddress",
+                  type: "address",
+                },
+                {
+                  internalType: "uint256",
+                  name: "date",
+                  type: "uint256",
+                },
+              ],
+              internalType: "struct MedicalContract.Record[]",
+              name: "",
+              type: "tuple[]",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "getTitle",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "owner",
+          outputs: [
+            {
+              internalType: "address",
+              name: "",
+              type: "address",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "",
+              type: "address",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+          ],
+          name: "patientsByDoctor",
+          outputs: [
+            {
+              internalType: "string",
+              name: "name",
+              type: "string",
+            },
+            {
+              internalType: "string",
+              name: "cpf",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "birthDate",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "priority",
+              type: "uint256",
+            },
+            {
+              internalType: "address",
+              name: "doctorAddress",
+              type: "address",
+            },
+            {
+              internalType: "address",
+              name: "patientWalletAddress",
+              type: "address",
+            },
+            {
+              internalType: "string",
+              name: "bloodType",
+              type: "string",
+            },
+            {
+              internalType: "uint256",
+              name: "recipientAge",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "organSize",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "urgency",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "curability",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "qConstant",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "queueEntryDate",
+              type: "uint256",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "",
+              type: "address",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+          ],
+          name: "records",
+          outputs: [
+            {
+              internalType: "address",
+              name: "patientAddress",
+              type: "address",
+            },
+            {
+              internalType: "uint256",
+              name: "oldValue",
+              type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "newValue",
+              type: "uint256",
+            },
+            {
+              internalType: "string",
+              name: "field",
+              type: "string",
+            },
+            {
+              internalType: "address",
+              name: "doctorAddress",
+              type: "address",
+            },
+            {
+              internalType: "uint256",
+              name: "date",
+              type: "uint256",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+      ],
+      inheritedFunctions: {},
+    },
+  },
+  11155111: {
+    MedicalContract: {
+      address: "0x384F6e8EC88987ecB83A1fc0bA11aef06dE53f40",
       abi: [
         {
           inputs: [

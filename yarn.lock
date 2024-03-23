@@ -11002,9 +11002,9 @@ __metadata:
   linkType: hard
 
 "preact@npm:^10.12.0, preact@npm:^10.16.0":
-  version: 10.20.0
-  resolution: "preact@npm:10.20.0"
-  checksum: cf8057538457564dae79e885fc8d7786618018e2e826e00b8959be711403f0dd3855f13c55ce94fda0fe404a5cccc746d11c7172800c1737f61baa22fc18abdd
+  version: 10.20.1
+  resolution: "preact@npm:10.20.1"
+  checksum: af5ed9bdf44bfa5487479c09fa971a32902987f277c74d6244f9d9466ccd5c1efd3a0949e7dc2227177623878b1adafcc5c50cee6617a84f72d1cebe55ff76ba
   languageName: node
   linkType: hard
 
@@ -11288,6 +11288,15 @@ __metadata:
     react: ">=16"
     react-dom: ">=16"
   checksum: 3e337816db574782454bf09c63a8aca546bf9c5be3f83d0494d24bdcfd97ca2db64d4c151c4ab0184d2342d7a7226403e6812e70caf03c8b55a07787bb4ad0f2
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "react-icons@npm:5.0.1"
+  peerDependencies:
+    react: "*"
+  checksum: e5df9c5e3bcdb8d68bd4c5e41650c26d2a3ceda61ded0e2abf7caa0e54c9fb712badcd06f0c240cfc645a5dd15a5dc1eb5dd55f60123d86860f516b1fc456474
   languageName: node
   linkType: hard
 
@@ -11842,6 +11851,7 @@ __metadata:
     husky: ~8.0.3
     lint-staged: ~13.2.2
     next: ~14.0.4
+    react-icons: ^5.0.1
     vercel: ~32.4.1
   languageName: unknown
   linkType: soft

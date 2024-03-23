@@ -57,7 +57,7 @@ export const NETWORKS_EXTRA_DATA: Record<string, ChainAttributes> = {
     color: "#fbebd4",
   },
 };
-
+console.log(chains.scrollSepolia.id);
 /**
  * Gives the block explorer transaction URL, returns empty string if the network is a local chain
  */
