@@ -54,7 +54,7 @@ export default function AccountDetail({ children }: { children: React.ReactNode 
         </div>
       </div>
       <div className="text-black flex flex-col w-full max-w-[1200px] mx-auto">
-        <div className="flex justify-center flex-col items-center space-x-2 mt-[60px]">{children}</div>
+        <div className="flex justify-center flex-col items-center mt-[60px]  px-3">{children}</div>
       </div>
     </div>
   );
