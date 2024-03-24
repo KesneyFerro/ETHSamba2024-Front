@@ -157,8 +157,8 @@ Proposta de valor
 
 ### Scroll
 
-Contrato: 0xaF26145d3c11c81fbC950806cbe86F725D783c9b
-Link do contrato no [Scroll etherscan](https://sepolia.scrollscan.dev/address/0xaF26145d3c11c81fbC950806cbe86F725D783c9b): https://sepolia.scrollscan.dev/address/0xaF26145d3c11c81fbC950806cbe86F725D783c9b
+Contrato: 0xaF26145d3c11c81fbC950806cbe86F725D783c9b<br/>
+Link do contrato no [Scroll Etherscan](https://sepolia.scrollscan.dev/address/0xaF26145d3c11c81fbC950806cbe86F725D783c9b)
 
 Participamos das categorias:
 - Non-Financial Track:
