@@ -170,7 +170,8 @@ No nosso código implementamos Scroll em:
 
 Participamos da categoria principal 
 
-No nosso código implementamos Scroll em:
+No nosso código implementamos Scaffold-ETH em:
+
 <a name="nossaEquipe"></a>
 ## Nossa Equipe
 
