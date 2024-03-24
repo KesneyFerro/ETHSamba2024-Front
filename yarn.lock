@@ -4338,6 +4338,7 @@ __metadata:
     eslint-config-prettier: ~8.5.0
     eslint-plugin-prettier: ~4.2.1
     framer-motion: ^11.0.20
+    javascript-time-ago: ^2.5.9
     next: ~14.0.4
     next-themes: ~0.2.1
     nprogress: ~0.2.0
@@ -4349,6 +4350,7 @@ __metadata:
     react-dom: ~18.2.0
     react-hot-toast: ~2.4.0
     tailwindcss: ~3.3.3
+    timeago-react: ^3.0.6
     type-fest: ~4.6.0
     typescript: ~5.1.6
     use-debounce: ~8.0.4
@@ -11333,6 +11335,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"javascript-time-ago@npm:^2.5.9":
+  version: 2.5.9
+  resolution: "javascript-time-ago@npm:2.5.9"
+  dependencies:
+    relative-time-format: ^1.1.6
+  checksum: 401937d46b82c038904d4b9b986b1d10977b77890b0439a6d1b8d2a393cec4c88e7edb06ca9c57f67c0c05308a796cebe930d20f5aa1094bcd8a3fa68e70b2d3
+  languageName: node
+  linkType: hard
+
 "jiti@npm:^1.19.1, jiti@npm:^1.21.0":
   version: 1.21.0
   resolution: "jiti@npm:1.21.0"
@@ -14001,6 +14012,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"relative-time-format@npm:^1.1.6":
+  version: 1.1.6
+  resolution: "relative-time-format@npm:1.1.6"
+  checksum: b0c14f2d81bb086d0bcedabab78cff0cd31d3ad5040db88f0dc671361c33bf5ec924fe897e9308a43c2f569b114dd543557b9df659f7a06e2d06d392b539d5d7
+  languageName: node
+  linkType: hard
+
 "req-cwd@npm:^2.0.0":
   version: 2.0.0
   resolution: "req-cwd@npm:2.0.0"
@@ -15332,6 +15350,24 @@ __metadata:
   dependencies:
     convert-hrtime: ^3.0.0
   checksum: 8bcecbda97142e804ba03acf52117cc771c2933277b299bdf2e8a949960fda3e70d8159b3ba5f49495d662c4b8cc15e30dbb1a703b1a735eecce11682b98e8f9
+  languageName: node
+  linkType: hard
+
+"timeago-react@npm:^3.0.6":
+  version: 3.0.6
+  resolution: "timeago-react@npm:3.0.6"
+  dependencies:
+    timeago.js: ^4.0.0
+  peerDependencies:
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: be9945194eca4ae01fc5d3d15b9d84dcf4d2cf5fe52f7956d8163842bf03d055a6bec3d347b33cf5fc26c88b571edcd4a2cf2dab55442cd1f197abdd339ba2f7
+  languageName: node
+  linkType: hard
+
+"timeago.js@npm:^4.0.0":
+  version: 4.0.2
+  resolution: "timeago.js@npm:4.0.2"
+  checksum: c785a06988717cb5a00bb96b00ebaa56e83f4b5ed5d87c4c3931fb1bb2591a0e13a7ddc4b6c12c6ee7de64b440ed903c7bd4e0edddb37aade9bfc9ceab5d0db3
   languageName: node
   linkType: hard
 
