@@ -48,8 +48,8 @@ export default function Doacoes() {
             <div className="w-1/2 bg-[#C9CADA]/30">
               <div className="p-10 flex flex-row">
                 <div className="flex flex-col justify-center">
-                  <GiKidneys className="w-12 h-12 ml-9" />
-                  <h1 className="text-2xl ml-10">Rim</h1>
+                  <GiKidneys className="w-12 h-12 ml-10" />
+                  <h1 className="text-2xl ml-11">Rim</h1>
                 </div>
               </div>
             </div>
