@@ -125,6 +125,7 @@ A importância do Canvas de Proposta de Valor reside no fato de que uma proposta
 <p align="center"> Figura 2: Canva de Proposta de Valor</p>
 <br>
 ![imagem canvaPropostaDeValor]()
+
 <p align="center"> Fonte: Material produzido pelos Autores (2024)</p>
 <br>
 
@@ -161,7 +162,7 @@ Proposta de valor
 
 Participamos das categorias:
 - Non-Financial Track:
-- Feneral Track:
+- General Track:
 
 ### BuidlGuidl
 
