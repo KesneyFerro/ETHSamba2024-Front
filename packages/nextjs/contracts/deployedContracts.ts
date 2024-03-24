@@ -348,7 +348,7 @@ const deployedContracts = {
   },
   534351: {
     MedicalContract: {
-      address: "0x63333cd5d9E255D975EC27aCcC725F6dAA99cd60",
+      address: "0x6ADd5882CC05143B187295c494D63FEee54dC820",
       abi: [
         {
           inputs: [
@@ -360,6 +360,82 @@ const deployedContracts = {
           ],
           stateMutability: "nonpayable",
           type: "constructor",
+        },
+        {
+          inputs: [
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+          ],
+          name: "RandomBloodType",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+          ],
+          name: "RandomCPF",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+          ],
+          name: "RandomDisease",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+          ],
+          name: "RandomName",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
         },
         {
           inputs: [
@@ -397,11 +473,6 @@ const deployedContracts = {
               type: "uint256",
             },
             {
-              internalType: "uint256",
-              name: "_priority",
-              type: "uint256",
-            },
-            {
               internalType: "string",
               name: "_bloodType",
               type: "string",
@@ -425,6 +496,11 @@ const deployedContracts = {
               internalType: "uint256",
               name: "_urgency",
               type: "uint256",
+            },
+            {
+              internalType: "string",
+              name: "_disease",
+              type: "string",
             },
             {
               internalType: "uint256",
@@ -465,11 +541,6 @@ const deployedContracts = {
             {
               internalType: "uint256",
               name: "birthDate",
-              type: "uint256",
-            },
-            {
-              internalType: "uint256",
-              name: "priority",
               type: "uint256",
             },
             {
@@ -516,6 +587,11 @@ const deployedContracts = {
               internalType: "uint256",
               name: "queueEntryDate",
               type: "uint256",
+            },
+            {
+              internalType: "string",
+              name: "disease",
+              type: "string",
             },
           ],
           stateMutability: "view",
@@ -578,6 +654,13 @@ const deployedContracts = {
         },
         {
           inputs: [],
+          name: "generateRandomPatient",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function",
+        },
+        {
+          inputs: [],
           name: "getAllPatients",
           outputs: [
             {
@@ -595,11 +678,6 @@ const deployedContracts = {
                 {
                   internalType: "uint256",
                   name: "birthDate",
-                  type: "uint256",
-                },
-                {
-                  internalType: "uint256",
-                  name: "priority",
                   type: "uint256",
                 },
                 {
@@ -646,6 +724,11 @@ const deployedContracts = {
                   internalType: "uint256",
                   name: "queueEntryDate",
                   type: "uint256",
+                },
+                {
+                  internalType: "string",
+                  name: "disease",
+                  type: "string",
                 },
               ],
               internalType: "struct MedicalContract.Patient[]",
@@ -684,11 +767,6 @@ const deployedContracts = {
                   type: "uint256",
                 },
                 {
-                  internalType: "uint256",
-                  name: "priority",
-                  type: "uint256",
-                },
-                {
                   internalType: "address",
                   name: "doctorAddress",
                   type: "address",
@@ -732,6 +810,11 @@ const deployedContracts = {
                   internalType: "uint256",
                   name: "queueEntryDate",
                   type: "uint256",
+                },
+                {
+                  internalType: "string",
+                  name: "disease",
+                  type: "string",
                 },
               ],
               internalType: "struct MedicalContract.Patient[]",
@@ -787,11 +870,6 @@ const deployedContracts = {
               type: "uint256",
             },
             {
-              internalType: "uint256",
-              name: "",
-              type: "uint256",
-            },
-            {
               internalType: "address",
               name: "",
               type: "address",
@@ -825,6 +903,16 @@ const deployedContracts = {
               internalType: "uint256",
               name: "",
               type: "uint256",
+            },
+            {
+              internalType: "uint256",
+              name: "",
+              type: "uint256",
+            },
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
             },
             {
               internalType: "uint256",
@@ -980,11 +1068,6 @@ const deployedContracts = {
               type: "uint256",
             },
             {
-              internalType: "uint256",
-              name: "priority",
-              type: "uint256",
-            },
-            {
               internalType: "address",
               name: "doctorAddress",
               type: "address",
@@ -1028,6 +1111,11 @@ const deployedContracts = {
               internalType: "uint256",
               name: "queueEntryDate",
               type: "uint256",
+            },
+            {
+              internalType: "string",
+              name: "disease",
+              type: "string",
             },
           ],
           stateMutability: "view",

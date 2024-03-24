@@ -50,22 +50,22 @@ const Home: NextPage = () => {
   ];
 
   return (
-    <div className="flex bg-white flex-col w-full items-center h-full flex-grow">
+    <div className="flex  bg-white flex-col w-full items-center h-full flex-grow">
       <div className="w-full flex flex-col items-center bg-[#505477] ">
         <div className="w-full max-w-[1200px] flex items-start flex-col px-7 py-16">
           <div id="titles">
-            <h1 className="text-2xl font-semibold">Olá, Usuário!</h1>
-            <p className=" text-lg m-0">
+            <h1 className="text-white text-2xl font-semibold">Olá, Usuário!</h1>
+            <p className=" text-lg m-0 text-white">
               Entre com o seu código HASH e acesse todas as listas dinâmicas de espera de doação de orgãos
             </p>
           </div>
 
           <div className="w-full flex flex-col gap-y-5 mt-8" id="actions">
-            <div className="line flex items-center gap-x-5">
+            <div className="text-white line flex items-center gap-x-5">
               <span className="font-medium">Ações</span>
               <hr className="w-full bg-white "></hr>
             </div>
-            <div className="flex gap-8 gap-y-2 items-start flex-wrap justify-start w-full lg:gap-12">
+            <div className="text-white flex gap-8 gap-y-2 items-start flex-wrap justify-start w-full lg:gap-12">
               {datalinks.map((link, index) => (
                 <div key={index} className="flex max-w-[60px] gap-y-2 flex-col justify-center items-center">
                   <div className="w-full aspect-square bg-white rounded-md p-2">

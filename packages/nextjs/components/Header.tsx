@@ -39,8 +39,8 @@ export const HeaderMenuLinks = () => {
               href={href}
               passHref
               className={`${
-                isActive ? "bg-secondary shadow-md" : ""
-              } hover:bg-secondary hover:shadow-md focus:!bg-secondary active:!text-neutral py-1.5 px-3 text-sm rounded-full gap-2 grid grid-flow-col`}
+                isActive ? "bg-secondary shadow-md !text-black" : ""
+              } hover:bg-secondary text-white hover:text-black hover:shadow-md focus:!bg-secondary active:!text-black py-1.5 px-3 text-sm rounded-full gap-2 grid grid-flow-col`}
             >
               {icon}
               <span>{label}</span>
@@ -74,12 +74,12 @@ export const Header = () => {
               setIsDrawerOpen(prevIsOpenState => !prevIsOpenState);
             }}
           >
-            <Bars3Icon className="h-1/2" />
+            <Bars3Icon className="h-1/2 text-white" />
           </label>
           {isDrawerOpen && (
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="text-white menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               onClick={() => {
                 setIsDrawerOpen(false);
               }}
@@ -92,7 +92,7 @@ export const Header = () => {
           {/* <div className="flex relative w-[75px] h-10 ">
             <Image alt="SE2 logo" className="cursor-pointer rounded-md" fill src="/logo.png" />
           </div> */}
-          <div className="flex flex-col">
+          <div className="flex flex-col text-white">
             <span className="font-bold leading-tight">OrgãoView</span>
             <span className="text-xs">ETHSamba 2024</span>
           </div>
@@ -101,7 +101,7 @@ export const Header = () => {
           <HeaderMenuLinks />
         </ul>
       </div>
-      <div className="navbar-end flex-grow mr-4">
+      <div className="navbar-end flex-grow mr-4 ">
         <RainbowKitCustomConnectButton />
         <FaucetButton />
       </div>
