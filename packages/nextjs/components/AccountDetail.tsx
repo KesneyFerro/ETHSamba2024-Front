@@ -16,7 +16,7 @@ export default function AccountDetail({ children }: { children: React.ReactNode 
   if (!connectedAddress) {
     return (
       <div className="flex bg-[#4b4e6d] flex-col w-full flex-grow h-full justify-center items-center">
-        <img src="/logo.png" className="mb-5 w-[150px]"></img>
+        <img src="/logo.png" className="mb-5 w-[150px]" alt="logo"></img>
         <h3 className="text-white text-4xl font-bold text-center mb-8 max-w-[300px]">
           Conecte-se a uma conta para acessar os dados
         </h3>

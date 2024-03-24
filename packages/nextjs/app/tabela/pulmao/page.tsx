@@ -64,6 +64,7 @@ export default function Tabela() {
   return (
     <>
       <AccountDetail>
+        <h3 className="text-2xl mb-8 font-bold text-[#4b4e6d]">Lista de pacientes para transplante de pulmão</h3>
         <div className="flex justify-center flex-col items-center outline outline-gray-300 outline-1 bg-gray-100   py-0 pb-0 rounded-md  w-full max-w-[1500px]">
           <header className="w-full flex items-center text-base border-b-2  text-[#4B4E6D] font-medium  py-5 ">
             <span className="w-full text-center flex justify-center items-center  ">Posição</span>

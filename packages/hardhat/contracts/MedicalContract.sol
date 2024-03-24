@@ -9,7 +9,12 @@ contract MedicalContract {
     string[] public RandomName = ['Joao', 'Maria', 'Jose', 'Ana', 'Francisco', 'Antonio', 'Luiz', 'Paulo', 'Carlos', 'Manoel', 'Pedro', 'Francisca', 'Marcos', 'Raimundo', 'Sebastiao', 'Antonia', 'Marcelo', 'Marcia', 'Ricardo', 'Fernando']; 
     string[] public RandomBloodType = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'A+', 'A-', 'B+', 'B-'];
     string[] public RandomCPF = ['123.456.789-00', '987.654.321-00', '123.456.789-00', '987.654.321-00', '123.456.789-00', '987.654.321-00', '123.456.789-00', '987.654.321-00', '123.456.789-00', '987.654.321-00', '123.456.789-00', '987.654.321-00', '123.456.789-00', '987.654.321-00', '123.456.789-00', '987.654.321-00', '123.456.789-00', '987.654.321-00', '123.456.789-00', '987.654.321-00'];
-    string[] public RandomDisease = ["Cancer", "Hepatite", "Covid", "Gripe", "Dengue", "Zika", "Chikungunya", "Febre Amarela", "Sarampo", "Caxumba", "Rubeola", "Varicela", "Herpes", "HIV", "HPV", "Gonorreia", "Sifilis", "Tuberculose", "Hanseniase", "Leishmaniose"];
+    string[] public RandomDisease = ["Hipertensao Pulmonar","Bronquiectasia nao fibrocistica", "Fibrose cistica", "Doenca Intersticial Pulmonar","Doenca Pulmonar Cronica","Doenca Renal Cronica (fase terminal)","Ceratopatia bolhosa","Ceratocone","Ceratite","Queimaduras quimicas da cornea","Distrofias do estroma da cornea","Leucemia","Linfomas","Doencas dos ganglios","Doencas do baco","Anemia grave adquirida ou congenita","Mielodisplasias"];
+
+
+    uint256[] public RamdomUrgencyLevels = [80,70,90,95,85,40,70,60,75,95,50,60,55,70,50,90,85,80,85,95,90];
+    uint256[] public RamdomCurabilityLevels = [70,80,60,40,50,70,30,40,50,90,70,80,75,70,65,80,75,70,75,90,85];
+    uint256[] public RamdomAge = [65,55, 60, 50, 50,40,30,55,50, 60,45,30,40, 50,40,45,55,55,55, 45, 55];
 
 
     struct Patient {
@@ -71,23 +76,26 @@ contract MedicalContract {
 
     function generateRandomPatient() public onlyDoctor {
 
-
+        for (uint256 i = 0; i < 6; i++) {
             uint randNo = 0;
             randNo = uint (keccak256(abi.encodePacked (msg.sender, block.timestamp, randNo)))%100;
 
-            string memory name = RandomName[block.timestamp % RandomName.length];
-            string memory cpf = RandomCPF[block.timestamp % RandomCPF.length];
-            uint256 birthDate = randNo;
-            string memory bloodType = RandomBloodType[block.timestamp % RandomBloodType.length];
+            string memory name = RandomName[i];
+            string memory cpf = RandomCPF[i];
+            uint256 birthDate = RamdomAge[i];
+            string memory bloodType = RandomBloodType[i];
             uint256 recipientAge = uint (keccak256(abi.encodePacked (msg.sender, block.timestamp, randNo)))%100;
-            address patientWalletAddress = address(uint160(uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty))) % 10**38));
+            address patientWalletAddress = address(uint160(uint(keccak256(abi.encodePacked(i, blockhash(block.number))))));
             uint256 organSize = uint (keccak256(abi.encodePacked (msg.sender, block.timestamp, randNo)))%100;
-            uint256 urgency = uint (keccak256(abi.encodePacked (msg.sender, block.timestamp, randNo)))%100;
-            string memory disease = RandomDisease[block.timestamp % RandomDisease.length];
-            uint256 curability = uint (keccak256(abi.encodePacked (msg.sender, block.timestamp, randNo)))%100;
+            uint256 urgency = RamdomUrgencyLevels[i];
+            string memory disease = RandomDisease[i];
+            uint256 curability = RamdomCurabilityLevels[i];
             uint256 qConstant = uint (keccak256(abi.encodePacked (msg.sender, block.timestamp, randNo)))%100;
 
             addPatient(name, cpf, birthDate, bloodType, recipientAge, patientWalletAddress, organSize, urgency, disease, curability, qConstant);
+
+        }
+
         
 
     }
