@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { BiSolidDonateHeart } from "react-icons/bi";
 import { BsFillQuestionSquareFill } from "react-icons/bs";
 import { GrMapLocation } from "react-icons/gr";
@@ -12,19 +13,19 @@ export default function Servicos() {
       <div className="flex justify-end flex-row items-end pb-10">
         <div className="flex flex-col space-y-0">
           <div className="flex flex-row space-x-1 my-1">
-            {/* <Link href="/tabela"> */}
             <div className="w-1/2 bg-[#C9CADA]/30 rounded-tl-3xl p-4...">
-              <div className="p-10 flex flex-row">
-                <div className=" bg-[#C9CADA] rounded-full p-12">
-                  <BiSolidDonateHeart className="w-12 h-12" />
+              <Link href="/listaDoacoes">
+                <div className="p-10 flex flex-row">
+                  <div className=" bg-[#C9CADA] rounded-full p-12">
+                    <BiSolidDonateHeart className="w-12 h-12" />
+                  </div>
+                  <div className="flex flex-col ml-10">
+                    <h1 className="text-2xl">Listas para Doação</h1>
+                    <p>Veja as listas de necessidade de órgãos</p>
+                  </div>
                 </div>
-                <div className="flex flex-col ml-10">
-                  <h1 className="text-2xl">Listas para Doação</h1>
-                  <p>Veja as listas de necessidade de órgãos</p>
-                </div>
-              </div>
+              </Link>
             </div>
-            {/* </Link> */}
 
             <div className="w-1/2 bg-[#C9CADA]/30 rounded-tr-3xl p-4...">
               <div className="p-10 flex flex-row">
