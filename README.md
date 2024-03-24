@@ -6,7 +6,7 @@
 
 🧪 Uma atualização para a fila de espera de doação de orgãos. Visualize de forma transparente, segura e anônima a sua posição na fila de espera de doação de órgãos, além dos critérios de classificação para o seu posicionamento.
 
-⚙️ Solução desenvolvida usando NextJS, RainbowKit, Hardhat, Wagmi, Viem, and Typescript.
+⚙️ Solução desenvolvida usando NextJS, RainbowKit, Hardhat, ReactJs, and Typescript.
 
 ## Índice
 
@@ -87,7 +87,7 @@ A análise SWOT é uma ferramenta estratégica utilizada para avaliar os pontos 
 <p align="center"> Figura 1: Análise SWOT</p>
 <br>
 
-![imagem swot]()
+![imagem swot](/assetsDocs/AnaliseSWOT.png)
 <p align="center"> Fonte: Material produzido pelos Autores (2024)</p>
 <br>
 
@@ -124,7 +124,8 @@ A importância do Canvas de Proposta de Valor reside no fato de que uma proposta
 
 <p align="center"> Figura 2: Canva de Proposta de Valor</p>
 <br>
-![imagem canvaPropostaDeValor]()
+
+![imagem Canvas de Valor](/assetsDocs/CanvasdeValor.png)
 
 <p align="center"> Fonte: Material produzido pelos Autores (2024)</p>
 <br>
