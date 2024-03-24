@@ -1,9 +1,5 @@
 # SALVO: Sistema de Acompanhamento, Listagem e Verificação de Órgãos
 
-<h4 align="center">
-  <a href="https://scaffoldeth.io">Website</a> | <a href="#englishDocumentation">English Documentation</a>
-</h4>
-
 🧪 Uma atualização para a fila de espera de doação de orgãos. Visualize de forma transparente, segura e anônima a sua posição na fila de espera de doação de órgãos, além dos critérios de classificação para o seu posicionamento.
 
 ⚙️ Solução desenvolvida usando NextJS, RainbowKit, Hardhat, ReactJs, and Typescript.
