@@ -164,10 +164,13 @@ Participamos das categorias:
 - Non-Financial Track:
 - General Track:
 
+No nosso código implementamos Scroll em:
+
 ### BuidlGuidl
 
 Participamos da categoria principal 
 
+No nosso código implementamos Scroll em:
 <a name="nossaEquipe"></a>
 ## Nossa Equipe
 
