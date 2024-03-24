@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { BsLungsFill } from "react-icons/bs";
 import { GiHeartOrgan } from "react-icons/gi";
 import { GiLiver } from "react-icons/gi";
@@ -14,16 +15,16 @@ export default function Doacoes() {
       <div className="flex justify-end flex-row items-end pb-10">
         <div className="flex flex-col space-y-1">
           <div className="flex flex-row space-x-1 my-0">
-            {/* <Link href="/tabela"> */}
             <div className="w-1/2 bg-[#C9CADA]/30 rounded-tl-3xl">
-              <div className="p-10 flex flex-row">
-                <div className="flex flex-col ml-10">
-                  <GiHeartOrgan className="w-12 h-12 flex justify-center ml-4" />
-                  <h1 className="text-2xl">Coração</h1>
+              <Link href="/tabela">
+                <div className="p-10 flex flex-row">
+                  <div className="flex flex-col ml-10">
+                    <GiHeartOrgan className="w-12 h-12 flex justify-center ml-4" />
+                    <h1 className="text-2xl">Coração</h1>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
-            {/* </Link> */}
 
             <div className="w-1/2 bg-[#C9CADA]/30 rounded-tr-3xl">
               <div className="p-10 flex flex-row">

@@ -28,15 +28,17 @@ export default function Servicos() {
             </div>
 
             <div className="w-1/2 bg-[#C9CADA]/30 rounded-tr-3xl p-4...">
-              <div className="p-10 flex flex-row">
-                <div className=" bg-[#C9CADA] rounded-full p-12">
-                  <LiaNewspaperSolid className="w-12 h-12" />
+              <Link href="/listaDoacoes">
+                <div className="p-10 flex flex-row">
+                  <div className=" bg-[#C9CADA] rounded-full p-12">
+                    <LiaNewspaperSolid className="w-12 h-12" />
+                  </div>
+                  <div className="flex flex-col ml-10">
+                    <h1 className="text-2xl">Critérios</h1>
+                    <p>Saiba como é definida a prioridade de pacientes</p>
+                  </div>
                 </div>
-                <div className="flex flex-col ml-10">
-                  <h1 className="text-2xl">Critérios</h1>
-                  <p>Saiba como é definida a prioridade de pacientes</p>
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
 
